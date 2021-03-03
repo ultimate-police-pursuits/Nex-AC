@@ -7192,7 +7192,7 @@ public OnVehicleDeath(vehicleid, killerid)
 	forward ac_OnVehicleDeath(vehicleid, killerid);
 #endif
 
-public OnPlayerText(playerid, text[])
+public OnPlayerText(playerid, const text[])
 {
 	if(ACInfo[playerid][acKicked] > 0) return 0;
 	#if AC_USE_NPC
@@ -7224,7 +7224,7 @@ public OnPlayerText(playerid, text[])
 #endif
 #define OnPlayerText ac_OnPlayerText
 #if defined ac_OnPlayerText
-	forward ac_OnPlayerText(playerid, text[]);
+	forward ac_OnPlayerText(playerid, const text[]);
 #endif
 
 public OnPlayerEnterCheckpoint(playerid)
