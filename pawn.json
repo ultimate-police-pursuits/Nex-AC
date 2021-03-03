@@ -1,12 +1,20 @@
 {
-	"user": "NexiusTailer",
+	"user": "ultimate-police-pursuits",
 	"repo": "Nex-AC",
+	"entry": "test.pwn",
+	"output": "test.amx",
 	"include_path": "src/v1.9.55",
+	"dependencies": [
+		"pawn-lang/samp-stdlib"
+	],
 	"build":
 	{
 		"compiler":
 		{
-			"version": "3.10.8"
-		}
+			"version": "3.10.10"
+		},
+		"includes": [
+			"src/v1.9.55"
+		]
 	}
 }
